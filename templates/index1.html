@@ -1,0 +1,25 @@
+
+{% extends 'base/based.html'%}
+{% block title %} {{ title }}  {% endblock%}
+
+{% block content %}
+
+<nav class="navbar navbar-default">
+    <title>Menu Administrador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Estilos.css') }}">
+    
+   <div class="menu-bar">
+       <ul>
+           <li><a href = "/users"> Ver Usuarios</a></li>
+           <li><a href = "/usersteams"> Asigna Equipos</a></li>
+           <li><a href = "/usersred">Listado de Usuarios Equipo Rojo</a>
+           <li><a href = "/usersblue">Listado de Usuarios Equipo Azul</a></li>
+           <li><a href = "/usersgreen">Listado de Usuarios Equipo Verde</a></li>
+           <li><a href = "/reviews"> Ver Comentarios</a></li>
+           <li><a href = "/logout"> Cerrar Sesion</a></li>      
+       </ul>
+   </div>
+
+</nav>
+
+{% endblock%}
